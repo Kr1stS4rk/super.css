@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My HTML Page</title>
+    <!-- Подключаем CSS файл -->
+    <link rel="stylesheet" href="style.css/style.css" />
+  </head>
+  <body class="page">
+    <!-- Шапка страницы -->
+    <header class="header">
+      <div class="header__logo">
+        <h1 class="header__title">My website</h1>
+        <button class="button--active"><span class="button__icon"><span class="button__text"></span>Click here</span></button>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="tour.html" class="header__link">Tours</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#projects" class="header__link">Projects</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#contacts" class="header__link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="content">
+      <!-- Секция о разработчике -->
+      <section id="about" class="content__section content__section--about">
+        <h2 class="content__title">About tours</h2>
+        <p class="content__text">
+          Hello! My name is Kris and this is my tour
+        </p>
+
+        <!-- Цитата -->
+        <blockquote class="quote">
+          Travel is the only thing you buy that makes you richer
+        </blockquote>
+      </section>
+
+      <!-- Секция проектов -->
+      <section
+        id="projects"
+        class="content__section content__section--projects"
+      >
+        <h2 class="content__title">Projects</h2>
+        <ul class="content__list">
+          <li class="content__list-item">
+            Project 1 - A trip to Elbrus &#128507;
+          </li>
+          <li class="content__list-item">
+            Project 2 - Trip to Australia &#128008;
+          </li>
+          <li class="content__list-item">
+            Project 3 -Trip to Egypt 	&#128042;
+          </li>
+        </ul>
+
+        <!-- Изображение проекта -->
+        <div class="image-container">
+          <img src="https://i.pinimg.com/originals/93/61/17/9361173b3b579608ca3a396b2f3f1c6c.jpg" alt="Organization of the trip" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <section id="contacts" class="footer__section footer__section--contacts">
+        <h3 class="footer__title">Contacts</h3>
+        <address class="footer__contact">
+          You can reach me at:
+          <a href="mailto:kristsarkisyan@mail.ru" class="footer__email"
+            >kristsarkisyan@mail.ru</a
+          ><br />
+        Phone:
+          <a href="tel:+79778596369" class="footer__phone">+7 (977) 859 63-69</a>
+        </address>
+      </section>
+    </footer>
+  </body>
+</html>
